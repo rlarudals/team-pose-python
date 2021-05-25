@@ -1,0 +1,43 @@
+{% extends '../base.html' %}
+<!--  -->
+
+{% block page_title %} MEMBER {% endblock page_title %}
+<!--  -->
+
+{% block content %} {% load tailwind_tags %} {% tailwind_css %}
+
+{% for mem in members %}
+
+
+
+{% if mem.isEven %}    
+    
+<section class="w-full h-96 bg-white bg-opacity-20 flex flex-row text-white p-60">
+
+{% else %} 
+
+<section class="w-full h-96 bg-white bg-opacity-30 flex flex-row-reverse text-white p-60">
+
+{% endif %}
+    
+    <div class="w-2/4 h-full flex flex-col items-center justify-center">
+        <img class = "rounded-full mb-8" src="data:image/png;base64,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" />
+        <p>{{mem.name}}</p>
+        <p>{{mem.birth}} / {{mem.gender}}</p>
+        <p>{{mem.mobile}}</p>
+            <p>{{mem.email}}</p>
+
+        </div>
+        <div class="w-2/4 h-full flex flex-col items-center justify-center">
+            <ul>
+                
+                {% for s in mem.skills.all %}
+                    <li>{{s}}</li>
+                {% endfor %}
+                    
+                    
+            </ul>
+        </div>
+    </section>
+{%endfor%}
+{% endblock content %}

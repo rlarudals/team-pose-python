@@ -1,0 +1,80 @@
+{% extends '../base.html' %}
+<!--  -->
+{% block page_title %} HOME {% endblock page_title%}
+
+<!--  -->
+{% block content %} {% load tailwind_tags %} {% tailwind_css %}
+
+<section class="w-full flex flex-col items-center justify-center mt-10">
+  <div class="bg-white w-3/4 h-auto shadow-lg mb-20">
+    <img
+      src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2020/09/29020725/hire-stellar-developer.jpg"
+    />
+  </div>
+
+  <div class="text-white mb-20 flex flex-col items-center justify-center">
+    <p class="text-2xl">Team Of Special And Professional Developers</p>
+    <div class="w-96 h-1 rounded-xl bg-gray-600 mt-8"></div>
+    <p class="text-5xl mt-6">D.D Coders</p>
+  </div>
+</section>
+
+<section
+  class="w-full mb-20 flex flex-row items-center justify-around relative"
+>
+  <p class="absolute text-gray-300 text-7xl top-3 left-20 text-opacity-30">
+    D E V E L O P E R
+  </p>
+  <p class="absolute text-gray-300 text-5xl bottom-3 right-20 text-opacity-30">
+    C O D E
+  </p>
+
+  <div class="w-2/5 h-auto">
+    <img
+      class="object-cover"
+      src="https://specials-images.forbesimg.com/imageserve/605e463506a5b6d6b54383bb/960x0.jpg?cropX1=0&cropX2=630&cropY1=0&cropY2=473"
+    />
+  </div>
+  <div class="w-2/5 h-auto">
+    <img
+      class="object-cover"
+      src="https://specials-images.forbesimg.com/imageserve/605e463506a5b6d6b54383bb/960x0.jpg?cropX1=0&cropX2=630&cropY1=0&cropY2=473"
+    />
+  </div>
+</section>
+
+<section class="mt-60 w-full flex flex-col items-center justify-center mb-40">
+  <div class="w-3/5 h-96 bg-black bg-opacity-30 text-white p-24 relative">
+    <div
+      class="
+        absolute
+        w-56
+        h-96
+        bg-indigo-500 bg-opacity-20
+        -bottom-20
+        -right-20
+        p-6
+        flex flex-col
+        items-center
+        justify-around
+      "
+    >
+      <p class="text-xl">W E B</p>
+      <p class="text-xl">M O B I L E</p>
+      <p class="text-xl">S Y S T E M</p>
+      <p class="text-xl">A I</p>
+      <p class="text-xl">P L A T F O R M</p>
+    </div>
+
+    <h2 class="text-5xl mb-20">🍀 DUMMY TITLE</h2>
+
+    <ul class="text-xl list-decimal pl-12">
+      <li>Dummy TextData Bla Bla....</li>
+      <li>Dummy TextData Bla Bla Bla Bla....</li>
+      <li>Dummy TextData Bla Bla Bla Bla Bla....</li>
+      <li>Dummy TextData Bla Bla Bla Bla....</li>
+    </ul>
+  </div>
+</section>
+
+{% endblock content %}
